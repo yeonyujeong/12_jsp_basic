@@ -33,6 +33,9 @@
 		System.out.println("나이 : " + age);
 		
 	%>
-
+	
+	<p>언어 <%=language %> </p>
+	<p>이유 <%=reason %></p>
+	<p>나이 <%=age %></p>
 </body>
 </html>

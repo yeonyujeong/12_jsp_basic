@@ -45,9 +45,35 @@
 	 	<c:out value="${i}"/>
 	 </c:forEach>
 	 
+	 <hr>
 	 
+	 <h3>2) forEach문</h3>
 	 
-	 
+	<c:forEach var="i" items="${datas}">
+		${i}
+	</c:forEach>
+	
+	<hr>
+	
+	<table border="1">
+		<tr>
+			<th>상품코드</th>
+			<th>상품이름</th>
+			<th>부서코드</th>
+			<th>부서이름</th>
+			<th>담당자이름</th>
+		</tr>							 
+		<c:forEach var="product" items="${productList}">
+			<tr>
+				<td>${product.pdCd}</td>
+				<td>${product.pdNm}</td>
+				<td>${product.deptCd}</td>
+				<td>${product.deptNm}</td>
+				<td>${product.mgrNm}</td>
+			</tr>
+		</c:forEach>
+	</table>
+
 	
 </body>
 </html>

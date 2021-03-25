@@ -29,7 +29,7 @@ public class MyPage extends HttpServlet {
 		HttpSession session = request.getSession();
 		String id = (String)session.getAttribute("id");
 		
-		request.setAttribute("id", id);
+		//세션을 이용하여 관련정보를 가져오는 로직(코드)
 		
 		RequestDispatcher dis = request.getRequestDispatcher("chapter09_servlet/05_myPage.jsp");
 		dis.forward(request, response);
